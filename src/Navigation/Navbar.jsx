@@ -1,7 +1,7 @@
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 
-const Navbar = () => {
+const Navbar = ({ handleInputChange, query }) => {
     return (
         <div className=" w-full mx-auto">
             <div className="max-w-[1240px] mx-auto flex justify-between items-center py-5">
@@ -10,6 +10,8 @@ const Navbar = () => {
                         type="text"
                         placeholder="Search shoes"
                         className="border outline-none rounded-md pl-3 p-2 lg:w-[300px] md:w-[300px] sm:w-[300px] w-[150px]"
+                        onChange={handleInputChange}
+                        value={query}
                     />
                 </div>
                 <div className="flex lg:gap-10 md:gap-10 sm:gap-6 gap-5 ">
