@@ -8,7 +8,7 @@ const Sidebar = ({ handleChange }) => {
     return (
         <div className="border-r w-[250px] flex flex-col items-start mb-10 pb-1 pl-5">
             <div>
-                <p className="font-extrabold lg:text-4xl md:4xl text-3xl py-5">
+                <p className="font-bold text-orange-500 lg:text-4xl md:4xl text-3xl py-5">
                     SHOES
                 </p>
             </div>

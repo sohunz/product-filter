@@ -9,15 +9,18 @@ const Navbar = ({ handleInputChange, query }) => {
                     <input
                         type="text"
                         placeholder="Search shoes"
-                        className="border outline-none rounded-md pl-3 p-2 lg:w-[300px] md:w-[300px] sm:w-[300px] w-[150px]"
+                        className="outline-none rounded-md pl-3 p-2 lg:w-[300px] md:w-[300px] sm:w-[300px] w-[150px] border text-gray-700 focus:outline-none focus:border-orange-500"
                         onChange={handleInputChange}
                         value={query}
                     />
                 </div>
                 <div className="flex lg:gap-10 md:gap-10 sm:gap-6 gap-5 ">
-                    <FiHeart size={23} />
-                    <AiOutlineShoppingCart size={23} />
-                    <AiOutlineUserAdd size={23} />
+                    <FiHeart size={25} className="text-orange-500" />
+                    <AiOutlineShoppingCart
+                        size={25}
+                        className="text-orange-500"
+                    />
+                    <AiOutlineUserAdd size={25} className="text-orange-500" />
                 </div>
             </div>
         </div>

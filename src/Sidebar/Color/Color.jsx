@@ -3,7 +3,7 @@ import Input from "../../components/Input";
 const Color = ({ handleChange }) => {
     return (
         <div>
-            <p className="font-bold text-xl pb-3 mt-3">Color</p>
+            <p className="font-bold text-xl pb-3 mt-3 text-orange-500">Color</p>
             <div className="flex flex-col gap-3">
                 <label className="sidebar-label-container">
                     <input
@@ -11,6 +11,7 @@ const Color = ({ handleChange }) => {
                         type="radio"
                         value=""
                         name="test1"
+                        defaultChecked
                     />
                     <span className="checkmark all"></span>
                     All

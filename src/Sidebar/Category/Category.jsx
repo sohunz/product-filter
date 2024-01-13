@@ -3,13 +3,14 @@ import Input from "../../components/Input";
 const Category = ({ handleChange }) => {
     return (
         <div>
-            <p className="font-bold text-xl pb-3">Category</p>
+            <p className="font-bold text-xl pb-3 text-orange-500">Category</p>
             <label className="sidebar-label-container">
                 <input
                     onChange={handleChange}
                     type="radio"
                     value=""
                     name="test"
+                    defaultChecked
                 />
                 <span className="checkmark"></span>All
             </label>
