@@ -3,13 +3,13 @@ import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 
 const Navbar = ({ handleInputChange, query }) => {
     return (
-        <div className=" w-full mx-auto">
+        <div className=" w-full">
             <div className="max-w-[1240px] mx-auto flex justify-between items-center py-5">
-                <div className="flex gap-5 sm:gap-6 md:gap-10 lg:gap-10 items-center">
+                <div className="w-full flex gap-5  items-center">
                     <input
                         type="text"
                         placeholder="Search shoes"
-                        className="outline-none rounded-md pl-3 p-2 lg:w-[300px] md:w-[300px] sm:w-[300px] w-[150px] border text-gray-700 focus:outline-none focus:border-orange-500"
+                        className="outline-none rounded-md pl-3 p-2 lg:w-[50%] md:w-[90%] sm:w-[90%] w-[90%] border text-gray-700 focus:outline-none focus:border-orange-500"
                         onChange={handleInputChange}
                         value={query}
                     />

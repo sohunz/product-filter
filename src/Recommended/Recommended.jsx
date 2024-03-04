@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 const Recommended = ({ handleClick }) => {
     return (
-        <div className="py-5">
+        <div className="py-5z">
             <p className="text-2xl font-bold py-5">Recommended</p>
             <div className="flex flex-row gap-3 flex-wrap pb-5">
                 <Button
